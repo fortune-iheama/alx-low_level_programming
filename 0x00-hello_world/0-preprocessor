@@ -1,2 +1,2 @@
 #!/bin/bash
-echo main.c > CFILE
+echo main.c >$CFILE
