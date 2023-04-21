@@ -1,5 +1,6 @@
+#include <stdio.h>
 /**
-* main - Entry point
+* main -  C program that prints with printf
 *
 * Return: Always 0 (Success)
 */
