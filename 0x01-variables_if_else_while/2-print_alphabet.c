@@ -1,20 +1,29 @@
-#include <stdlib.h>
-#include <ctype.h>
-/*
- * main- entry
- * description: this prints alphabets in lower case
- * return :always 0 (success)
- */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+#include <ctype.h>
+/**
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int alphabet;
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+int alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-alphabet = tolower(alphabet)
+alphabet = tolower(alphabet);
+putchar(alphabet);
+if (alphabet == 'z')
+{
+alphabet = 'A'; for (; alphabet <= 'Z'; alphabet++)
+{
 putchar(alphabet);
 }
-putchar("\n");
+break;
+}
+}
+}
+putchar('\n');
 return (0);
 }
