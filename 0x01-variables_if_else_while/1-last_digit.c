@@ -27,3 +27,4 @@ printf("last_digit of %d is %d and is greater than 0 and less than 6\n", last_di
 }
 return (0);
 }
+}
