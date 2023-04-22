@@ -10,23 +10,24 @@
 int main(void)
 {
 int n;
-int last_digit;
+int lt;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-last_digit = n % 10;
+last = n % 10;
 
-if (last_digit == 0)
+if (lt == 0)
 {
-printf("last_digit of %d is %d and is 0\n", last_digit, n);
+printf("lt digit of %d is %d and is 0\n", n, lt);
 }
-else if (last_digit > 5)
+else
 {
-printf("last_digit of %d is %d and is greater than 5\n", last_digit, n);
+if (lt > 5)
+printf("lt digit of %d is %d and is greater than 5\n", n, lt);
 }
-else if (last_digit > 0 < 6)
+else if (lt < 6)
 {
-printf("last_digit of %d is %d and is greater than 0 and less than 6\n", last_digit, n);
+printf("lt digit of %d is %d and is less than 6 and not 0\n", n, lt);
 }
 return (0);
 }
