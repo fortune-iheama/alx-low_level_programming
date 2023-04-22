@@ -14,7 +14,7 @@ for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 alphabet = tolower(alphabet);
 putchar(alphabet);
-if (alphabet == 'Z')
+if (alphabet == 'z')
 {
 alphabet = 'A';
 for (; alphabet <= 'Z'; alphabet++)
