@@ -15,10 +15,10 @@ alphabet++)
 {
 alphabet = tolower(alphabet);
 putchar(alphabet);
-if (alphabet =='Z')
+if (alphabet == 'Z')
 {
 alphabet = 'A';
-for (;alphabet <= 'Z'; alphabet++)
+for (; alphabet <= 'Z'; alphabet++)
 {
 putchar(alphabet);
 }
