@@ -6,9 +6,16 @@
 */
 int main(void)
 {
-char hex_digits[] = "0123456789abcdef";
-int i;
-for (i = 0; i < 16; i++)
-putchar("%c\n", hex_digits[i]);
-return (0);
+	int in;
+
+	for (in  = 48; in  < 58; in++)
+	{
+		putchar(in);
+	}
+	for (in  = 97; in  < 103; in++)
+	{
+		putchar(in);
+	}
+	putchar('\n');
+	return (0);
 }
