@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <stdlib.h>
 
 #include <time.h>
 
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - main type
  * Description: Get a random number 
@@ -16,7 +16,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last = n%``10;
+	lat = n % 10;
 
 	if (lat == 0)
 	{
