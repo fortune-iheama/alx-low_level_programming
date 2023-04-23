@@ -24,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		if (lat > 5)
+		if (last > 5)
 		{
 			printf("Lat digit of %d is %d and is greater than 5\n", n, lat);
 		}
