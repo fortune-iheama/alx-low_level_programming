@@ -18,17 +18,17 @@ int main(void)
 
 	if (lat == 0)
 	{
-		printf("Lat digit of %d is %d and is 0\n", n, lat);
+		printf("Last digit of %d is %d and is 0\n", n, lat);
 	}
 	else
 	{
 		if (lat > 5)
 		{
-			printf("Lat digit of %d is %d and is greater than 5\n", n, lat);
+			printf("Last digit of %d is %d and is greater than 5\n", n, lat);
 		}
 		else if (lat < 6)
 		{
-			printf("Lat digit of %d is %d and is less than 6 and not 0\n", n, lat);
+			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lat);
 		}
 	}	return (0);
 }
