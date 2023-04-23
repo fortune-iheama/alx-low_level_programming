@@ -1,14 +1,12 @@
 #include <stdlib.h>
-
 #include <time.h>
-
 #include <stdio.h>
-/**
- * main - main type
- * Description: Get a random number 
- * positive,nagetive or zero
- * Return: Always 0 (success)
- */
+/*
+* main - main type
+* Description:Get a random number
+* positive,nagetive or zero
+* Return: Always 0 (success)
+*/
 int main(void)
 {
 	int n;
@@ -24,7 +22,7 @@ int main(void)
 	}
 	else
 	{
-		if (last > 5)
+		if (lat > 5)
 		{
 			printf("Lat digit of %d is %d and is greater than 5\n", n, lat);
 		}
