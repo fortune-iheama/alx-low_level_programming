@@ -1,5 +1,7 @@
 #include "main.h"
 
+int largest_number(int a, int b, int c)
+
 int _putchar(char c);
 
 void print_alphabet(void);
