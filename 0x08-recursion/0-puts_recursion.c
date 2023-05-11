@@ -2,7 +2,7 @@
 
 /**
  * puts_recursion - this function prints a string, followed by a new line.
- * @s - is the string that is to be printed
+ * @s - string that is to be printed
  *
  * return:void
  */
