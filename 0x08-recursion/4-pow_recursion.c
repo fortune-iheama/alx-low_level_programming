@@ -17,3 +17,4 @@ int _pow_recursion(int x, int y)
 
 	numb *= _pow_recursion(x, y - 1);
 	return (numb);
+}
