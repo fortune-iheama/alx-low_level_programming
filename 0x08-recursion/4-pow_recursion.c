@@ -1,5 +1,5 @@
 /**
- * _pow_recursion - this function returns the value of x raised to the power of y.
+ * _pow_recursion - function returns the value of x raised to the power of y.
  * @x: the number
  * @y: the value to be raised to
  * Return: the value of x raised to the power of y if y is less than 0.
