@@ -8,15 +8,15 @@
 * or -1 if not natural root does not exist
 */
 
-int get_squareroot(int n, int sr)
+int get_root(int n, int root)
 {
-if (sr * sr > n)
+if (root * root > n)
 return (-1);
 
-if (sr * sr == n)
-return (sr);
+if (root * root == n)
+return (root);
 
-return (get_squareroot(n, sr + 1));
+return (get_root(n, root + 1));
 }
 
 
@@ -32,5 +32,5 @@ int _sqrt_recursion(int n)
 if (n < 0)
 return (-1);
 
-return (find_root(n, 0));
+return (get_root(n, 0));
 }
