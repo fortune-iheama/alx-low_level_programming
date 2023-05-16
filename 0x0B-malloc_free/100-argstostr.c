@@ -8,37 +8,36 @@
  * Return: NULL if ac == 0, av == NULL or function fails.
  * Otherwise return a pointer to the new string.
  */
-
 char *argstostr(int ac, char **av)
 {
-	char *n_str;
-	int f, o, r, t = ac;
+	int ab, bc, cd = 0, leng = 0;
+	char *str;
 
-	if (av == NULL || ac == 0)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (f = 0; f < ac; f++)
+	for (ab = 0; ab < ac; ab++)
 	{
-		for (o = 0; av[f][b]; o++)
-			t++;
+		for (bc = 0; av[ab][bc]; bc++)
+			leng++;
 	}
+	leng += ac;
 
-	n_str = malloc(sizeof(char) * t + 1);
-
-	if (n_str == NULL)
+	str = malloc(sizeof(char) * leng + 1);
+	if (str == NULL)
 		return (NULL);
 
-	r = 0;
-
-	for (f = 0; f < ac; f++)
+	for (ab = 0; ab < ac; ab++)
 	{
-		for (o = 0; av[f][o]; o++)
-			n_str[r++] = av[f][o];
-
-		n_str[n++] = '\n';
+		for (bc = 0; av[ab][bc]; bc++)
+		{
+			str[cd] = av[ab][bc];
+			ko++;
+		}
+		if (str[cd] == '\0')
+		{
+			str[cd++] = '\n';
+		}
 	}
-
-	n_str[t] = '\0';
-
-	return (n_str);
+	return (str);
 }
