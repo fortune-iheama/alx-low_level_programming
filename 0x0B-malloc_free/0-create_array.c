@@ -7,14 +7,13 @@
  * @size: array
  * @c: character
  * Return: NULL if size = 0
- * A pointer to the array
- * NULL if it fails
+ * A pointer to the array, or NULL if it fails
  */
 
 char *create_array(unsigned int size, char c)
 {
 		char *arr;
-		unsigned int is;
+		unsigned int os;
 
 		if (size == 0)
 		{
@@ -29,7 +28,7 @@ char *create_array(unsigned int size, char c)
 			return (NULL);
 		}
 
-		for (os = 0; os < size; is++)
+		for (os = 0; os < size; os++)
 		{
 			arr[os] = c;
 		}
