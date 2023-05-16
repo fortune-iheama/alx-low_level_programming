@@ -10,20 +10,29 @@
  * A pointer to the array
  * NULL if it fails
  */
+
 char *create_array(unsigned int size, char c)
 {
-	char *arr;
-	unsigned int n;
+		char *arr;
+		unsigned int is;
 
-	if (size == 0)
-		return (NULL);
+		if (size == 0)
+		{
+			return (NULL);
+		}
 
-	arr = malloc(size * sizeof(char));
-	if (arr == NULL)
-		return (NULL);
+		arr = malloc(sizeof(char) * size);
 
-	for (os = 0; n < size; os++)
-		arr[os] = c;
+		if (arr == NULL)
+		{
 
-	return (arr);
+			return (NULL);
+		}
+
+		for (os = 0; os < size; is++)
+		{
+			arr[os] = c;
+		}
+
+		return (arr);
 }
