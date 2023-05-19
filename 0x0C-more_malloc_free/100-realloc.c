@@ -8,12 +8,10 @@
  * @new_size: new size in bytes
  * Return: NULL if new_size == 0 and ptr is not NULL
  */
-
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-
 	void *f;
-	char *o, *n_ptr;
+	char *o, *new_ptr;
 	unsigned int i;
 
 	if (new_size == old_size)
@@ -26,7 +24,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		if (f == NULL)
 			return (NULL);
 
-		return (f);
+		return (m);
 	}
 
 	if (new_size == 0 && ptr != NULL)
@@ -36,7 +34,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 
 	new_ptr = ptr;
-	f = malloc(new_size * sizeof(*n_ptr));
+	f = malloc(new_size * sizeof(*new_ptr));
 
 	if (f == NULL)
 	{
@@ -47,7 +45,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	o = f;
 
 	for (i = 0; i < old_size && i < new_size; i++)
-		o[i] = *n_ptr++;
+		c[i] = *new_ptr++;
 
 	free(ptr);
 	return (f);
