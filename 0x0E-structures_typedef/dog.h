@@ -3,9 +3,9 @@
 
 /**
  * type struct - variable called dog
- * @name: variable name
- * @age: variable age
- * @owner:variable owner
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
  */
 
 
