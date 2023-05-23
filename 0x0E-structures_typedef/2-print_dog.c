@@ -4,7 +4,7 @@
 
 
 /**
- * print_dog - main function
+ * print_dog - Prints name, age and owner if not null.
  * @d: the struct dog to print
 **/
 
