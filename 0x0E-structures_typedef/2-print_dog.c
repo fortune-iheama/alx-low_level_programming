@@ -2,15 +2,14 @@
 #include "dog.h"
 #include <stdlib.h>
 
-
 /**
- * print_dog - Prints name, age and owner if not null.
- * @d: pointer to struct dog
+ * print_dog - Prints name, age and owner if not null
+ * @d: pointer to the struct
 **/
 
 void print_dog(struct dog *d)
 {
-if (d == NULL)
+	if (d == NULL)
 	{
 		return;
 	}
