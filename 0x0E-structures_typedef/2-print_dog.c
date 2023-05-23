@@ -5,7 +5,7 @@
 
 /**
  * print_dog - Prints name, age and owner if not null.
- * @d: the struct dog to print
+ * @d: pointer to struct dog
 **/
 
 void print_dog(struct dog *d)
