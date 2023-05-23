@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * type struct dog - variable 
+ * type struct - variable called dog
  * @name: variable name
  * @age: variable age
  * @owner:variable owner
@@ -10,6 +10,7 @@
 
 
 typedef struct dog
+
 {
 char *name;
 float age;
